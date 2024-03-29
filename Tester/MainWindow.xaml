@@ -1,0 +1,29 @@
+﻿<Window x:Class="TEST.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TEST"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="450" Background="Blue">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="start_test" Content="Пройти тест на гея" Background="White" FontSize="24" FontFamily="Arial Black" Grid.Row="1" Click="start_test_Click" Margin="10,2,10,0"/>
+        <Button x:Name="edit_test" Content="Редактировать гея" Background="White" FontSize="24" FontFamily="Arial Black" Grid.Row="2" Click="edit_test_Click" Margin="10,10,10,2" />
+        <TextBlock Margin="0,0,0,20" TextWrapping="Wrap" Text="Cалам Алйкум мои дорогие братья и сеста! Ты хочешь пройти тест или пойти на четыре стороны?)" Background="White" HorizontalAlignment="Center" FontFamily="Arial Black" FontSize="18" TextAlignment="Center" Width="400"/>
+        <TextBox x:Name="code" Margin="0,20,0,40" Grid.Row="3" TextWrapping="Wrap" HorizontalAlignment="Center" Width="400" TextAlignment="Center" FontFamily="Arial Black" FontSize="16" Background="Aqua" TextChanged="code_TextChanged"/>
+
+    </Grid>
+</Window>
